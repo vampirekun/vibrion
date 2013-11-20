@@ -1,0 +1,365 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta charset=utf-8>
+        <title>Ing. Alejandro Mellado V.</title>
+ 
+        <!--[if lt IE 9]> HTML5Shiv
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <style>
+		@-webkit-keyframes vibrate{
+		    from {-webkit-transform: rotate(-720deg);}
+		    to{-webkit-transform: rotate(0deg);}
+		}
+		@-moz-keyframes vibrate{
+		    from {-moz-transform: rotate(-720deg);}
+		    to{-moz-transform: rotate(0deg);}
+		}
+		@-o-keyframes vibrate{
+		    from {-o-transform: rotate(-720deg);}
+		    to{-o-transform: rotate(0deg);}
+		}
+		@keyframes vibrate{
+		    from {transform: rotate(-720deg);}
+		    to{transform: rotate(0deg);}
+		}
+
+
+
+		@-webkit-keyframes arms{
+		    from {-webkit-transform: rotate(-14deg) translate(0, -2px);}
+		    to{-webkit-transform: rotate(3deg) translate(0, 2px);}
+		}
+		@-moz-keyframes arms{
+		    from {-moz-transform: rotate(-14deg) translate(0, -2px);}
+		    to{-moz-transform: rotate(3deg) translate(0, 2px);}
+		}
+		@-o-keyframes arms{
+		    from {-o-transform: rotate(-14deg) translate(0, -2px);}
+		    to{-o-transform: rotate(3deg) translate(0, 2px);}
+		}
+		@keyframes arms{
+		    from {transform: rotate(-14deg) translate(0, -2px);}
+		    to{transform: rotate(3deg) translate(0, 2px);}
+		}
+		
+		@-webkit-keyframes lighteffect {
+			0% {box-shadow: 7px -20px 145px #00baff; scale(1,1);}
+			10%{box-shadow: 7px -20px 145px #fff;}
+			20%{box-shadow: 7px -10px 145px #c8fb00;}
+			30%{box-shadow: 7px -5px 145px #00baff;}
+			40%{box-shadow: 7px -20px 145px #ed145b;}
+			50%{box-shadow: 7px -20px 145px #ea66ff;}
+			60%{box-shadow: 7px -1px 145px #ff3600;}
+			70%{box-shadow: 7px -20px 145px #c3effc;}
+			80%{box-shadow: 7px -20px 145px #ccff00;}
+			90%{box-shadow: 7px -20px 145px #ffffff;}
+			100%{box-shadow: 7px -8px 145px #fcd19f; scale(1,1.2);}
+		}
+		@-moz-keyframes lighteffect {
+			0% {box-shadow: 7px -20px 145px #00baff; scale(1,1);}
+			10%{box-shadow: 7px -20px 145px #fff;}
+			20%{box-shadow: 7px -10px 145px #c8fb00;}
+			30%{box-shadow: 7px -5px 145px #00baff;}
+			40%{box-shadow: 7px -20px 145px #ed145b;}
+			50%{box-shadow: 7px -20px 145px #ea66ff;}
+			60%{box-shadow: 7px -1px 145px #ff3600;}
+			70%{box-shadow: 7px -20px 145px #c3effc;}
+			80%{box-shadow: 7px -20px 145px #ccff00;}
+			90%{box-shadow: 7px -20px 145px #ffffff;}
+			100%{box-shadow: 7px -8px 145px #fcd19f; scale(1,1.2);}
+		}
+		@-ms-keyframes lighteffect {
+			0% {box-shadow: 7px -20px 145px #00baff; scale(1,1);}
+			10%{box-shadow: 7px -20px 145px #fff;}
+			20%{box-shadow: 7px -10px 145px #c8fb00;}
+			30%{box-shadow: 7px -5px 145px #00baff;}
+			40%{box-shadow: 7px -20px 145px #ed145b;}
+			50%{box-shadow: 7px -20px 145px #ea66ff;}
+			60%{box-shadow: 7px -20px 145px #ff3600;}
+			70%{box-shadow: 7px -20px 145px #c3effc;}
+			80%{box-shadow: 7px -20px 145px #ccff00;}
+			90%{box-shadow: 7px -20px 145px #ffffff;}
+			100%{box-shadow: 7px -8px 145px #fcd19f; scale(1,1.2);}
+		}
+		@-o-keyframes lighteffect {
+			0% {box-shadow: 7px -20px 145px #00baff; scale(1,1);}
+			10%{box-shadow: 7px -20px 145px #fff;}
+			20%{box-shadow: 7px -10px 145px #c8fb00;}
+			30%{box-shadow: 7px -5px 145px #00baff;}
+			40%{box-shadow: 7px -20px 145px #ed145b;}
+			50%{box-shadow: 7px -20px 145px #ea66ff;}
+			60%{box-shadow: 7px -1px 145px #ff3600;}
+			70%{box-shadow: 7px -20px 145px #c3effc;}
+			80%{box-shadow: 7px -20px 145px #ccff00;}
+			90%{box-shadow: 7px -20px 145px #ffffff;}
+			100%{box-shadow: 7px -8px 145px #fcd19f; scale(1,1.2);}
+		}
+		@keyframes lighteffect {
+			0% {box-shadow: 7px -20px 145px #00baff; scale(1,1);}
+			10%{box-shadow: 7px -20px 145px #fff;}
+			20%{box-shadow: 7px -10px 145px #c8fb00;}
+			30%{box-shadow: 7px -5px 145px #00baff;}
+			40%{box-shadow: 7px -20px 145px #ed145b;}
+			50%{box-shadow: 7px -20px 145px #ea66ff;}
+			60%{box-shadow: 7px -1px 145px #ff3600;}
+			70%{box-shadow: 7px -20px 145px #c3effc;}
+			80%{box-shadow: 7px -20px 145px #ccff00;}
+			90%{box-shadow: 7px -20px 145px #ffffff;}
+			100%{box-shadow: 7px -8px 145px #fcd19f; scale(1,1.2);}
+		}
+		
+
+
+
+		@-webkit-keyframes armsb{
+		    from {-webkit-transform: rotate(14deg) translate(0, -2px);}
+		    to{-webkit-transform: rotate(-3deg) translate(0, 2px);}
+		}
+		@-moz-keyframes armsb{
+		    from {-moz-transform: rotate(14deg) translate(0, -2px);}
+		    to{-moz-transform: rotate(-3deg) translate(0, 2px);}
+		}
+		@-o-keyframes armsb{
+		    from {-o-transform: rotate(14deg) translate(0, -2px);}
+		    to{-o-transform: rotate(-3deg) translate(0, 2px);}
+		}
+		@keyframes armsb{
+		    from {transform: rotate(14deg) translate(0, -2px);}
+		    to{transform: rotate(-3deg) translate(0, 2px);}
+		}
+		
+
+
+
+		@-webkit-keyframes bic{
+		    from {-webkit-transform: rotate(2deg) translate(0px, 0);}
+		    to{-webkit-transform: rotate(6deg) translate(-6px, -2px);}
+		}
+		@-moz-keyframes bic{
+		    from {-moz-transform: rotate(2deg) translate(0px, 0);}
+		    to{-moz-transform: rotate(6deg) translate(-6px, -2px);}
+		}
+		@-o-keyframes bic{
+		    from {-o-transform: rotate(2deg) translate(0px, 0);}
+		    to{-o-transform: rotate(6deg) translate(-6px, -2px);}
+		}
+		@keyframes bic{
+		    from {transform: rotate(2deg) translate(0px, 0);}
+		    to{transform: rotate(6deg) translate(-6px, -2px);}
+		}
+
+
+		@-webkit-keyframes bicb{
+		    from {-webkit-transform: rotate(-6deg) translate(6px, -2px);}
+		    to{-webkit-transform: rotate(-2deg) translate(4px, 0);}
+		}
+		@-moz-keyframes bicb{
+		    from {-moz-transform: rotate(-6deg) translate(6px, -2px);}
+		    to{-moz-transform: rotate(-2deg) translate(4px, 0);}
+		}
+		@-o-keyframes bicb{
+		    from {-o-transform: rotate(-6deg) translate(6px, -2px);}
+		    to{-o-transform: rotate(-2deg) translate(4px, 0);}
+		}
+		@keyframes bicb{
+		    from {transform: rotate(-6deg) translate(6px, -2px);}
+		    to{transform: rotate(-2deg) translate(4px, 0);}
+		}
+
+
+    	body{
+    		background: #000;
+    	}
+		#vamp{ 
+			background:url("vamp.gif") 0px 0px no-repeat;
+			background-size: 100%;
+			width: 525px;
+			height: 510px;
+			position: relative;
+			z-index: 0;
+			margin: 160px auto 0;
+			display: none;
+			-webkit-transform: scale(.7);
+			   -moz-transform: scale(.7);
+			    -ms-transform: scale(.7);
+			     -o-transform: scale(.7);
+			        transform: scale(.7);
+			
+		}
+		#larm{
+			background: url("larm.png") 0px 0px no-repeat;
+			width: 77px;
+			height: 39px;
+			background-size: 100%;
+			position: absolute;
+			left: 156px;
+			top: 308px;
+			z-index: 1;
+		    -webkit-animation: arms .15s linear infinite alternate;
+		    -moz-animation: arms .15s linear infinite alternate;
+		    -o-animation: arms .15s linear infinite alternate;
+		    animation: arms .15s linear infinite alternate;
+		}
+		#lbic{
+			background: url("lbic.png") 0px 0px no-repeat;
+			width: 49px;
+			height: 81px;
+			background-size: 100%;
+			position: absolute;
+			left: 175px;
+			top: 267px;
+			z-index: 0;		    
+			-webkit-animation: bic 1500ms linear infinite alternate;
+		    -moz-animation: bic 1500ms linear infinite alternate;
+		    -o-animation: bic 1500ms linear infinite alternate;
+		    animation: bic 1500ms linear infinite alternate;
+
+		}
+		#rbic{
+			background: url("rbic.png") 0px 0px no-repeat;
+			width: 49px;
+			height: 81px;
+			background-size: 100%;
+			position: absolute;
+			left: 306px;
+			top: 270px;			
+			z-index: 0;		    
+			-webkit-animation: bic 1500ms linear infinite alternate;
+		    -moz-animation: bic 1500ms linear infinite alternate;
+		    -o-animation: bic 1500ms linear infinite alternate;
+		    animation: bic 1500ms linear infinite alternate;
+		}
+		#rarm{
+			background: url("rarm.png") 0px 0px no-repeat;
+			width: 77px;
+			height: 39px;
+			background-size: 100%;
+			position: absolute;
+			left: 286px;
+			top: 308px;
+			z-index: 1;
+		    -webkit-animation: armsb .2s linear infinite alternate;
+		    -moz-animation: armsb .2s linear infinite alternate;
+		    -o-animation: armsb .2s linear infinite alternate;
+		    animation: armsb .2s linear infinite alternate;
+
+		}
+		#table{
+			background: url("table.png") 0px 0px no-repeat;
+			width: 359px;
+			height: 212px;
+			background-size: 100%;
+			position: absolute;
+			left: 84px;
+			top: 202px;
+			z-index: 3;
+			display: none;
+		}
+		#balloon{
+			background: url("balloon.png") 0px 0px no-repeat;
+			width: 240px;
+			height: 244px;
+			background-size: 100%;
+			position: absolute;
+			left: 361px;
+			top: -54px;
+			z-index: 3;
+
+		}
+		#onomatopeya{
+			background: url("onomatopeya.png") 0px 0px no-repeat;
+			width: 160px;
+			height: 160px;
+			background-size: 100%;
+			position: absolute;
+			left: 35px;
+			top: 36px;
+			z-index: 1;
+		    -webkit-animation: vibrate 1129ms linear infinite;
+		    -moz-animation: vibrate 1129ms linear infinite;
+		    -o-animation: vibrate 1129ms linear infinite;
+		    animation: vibrate 1129ms linear infinite;
+
+		}
+		#light{
+			width: 110px;
+			height: 60px;
+			position: absolute;
+			display: block;
+			top: 291px;
+			left: 199px;
+		    -webkit-animation: lighteffect 3s linear infinite alternate;
+		    -moz-animation: lighteffect 3s linear infinite alternate;
+		    -o-animation: lighteffect 3s linear infinite alternate;
+		    animation: lighteffect 3s linear infinite alternate;
+		    z-index: 2;
+		}
+		#leftmq{
+			font-size: 300px;
+			color: #2d2d2d;
+			font-family: georgia;
+			position: absolute;
+			left: 20px;
+			top:80px;
+			display: none;
+		}
+		#rightmq{
+			font-size: 300px;
+			color: #2d2d2d;
+			font-family: georgia;
+			position: absolute;
+			right: 20px;
+			top:80px;
+			letter-spacing: -50px;
+		}
+    </style>
+    <body>
+		
+		<div id="vamp">
+			<div id="balloon">
+				<div id="onomatopeya"></div>
+			</div>
+			<div id="table"></div>
+			<div id="light"></div>
+			<div id="lbic"></div>
+			<div id="rbic"></div>
+			<div id="larm"></div>
+			<div id="rarm"></div>
+			<div id="leftmq">&lt;</div>
+			<div id="rightmq">/&gt;</div>
+		</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(
+		function ()
+		{	
+			 $('#leftmq').css('display', 'block');
+			 $('#leftmq').animate({ opacity: 5 }, 5);
+			 $('#leftmq').animate({ opacity: 1, "left": "-=150px"}, 1000 );
+
+			 $('#rightmq').css('display', 'block');
+			 $('#rightmq').animate({ opacity: 5 }, 5);
+			 $('#rightmq').animate({ opacity: 1, "right": "-=150px"}, 1000 );
+
+			 $('#balloon').css('display', 'block');
+			 $('#balloon').animate({ opacity: 0 }, 0);
+			 $('#table').css('display', 'block');
+			 $('#table').animate({ opacity: 0 }, 0);
+
+			 $('#table').animate({ opacity: 1, "top": "+=80px", }, "slow" );
+			 $('#vamp').fadeIn(1000,function(){
+				 $('#balloon').animate({ opacity: 1, "top": "-=80px", }, "slower" );
+			 });
+		}
+	);
+	</script>
+    </body>
+</html>
